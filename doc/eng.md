@@ -76,7 +76,7 @@ Then run the following command:
 sudo make examples
 
 ```
-在确认安装OpenCV后，将开始的安装过程，整个安装过程可能会持续四十分钟。 <br>
+After confirming the installation process that will begin after installing OpenCV, the entire installation process may last for forty minutes. <br>
 
 ### Step 2.4: Run the hello ncs program to confirm that the installation is correct.
 ```shell
