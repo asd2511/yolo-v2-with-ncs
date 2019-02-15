@@ -28,7 +28,7 @@ sudo aptitude update && sudo aptitude dist-upgrade  && sudo reboot
 ### 步骤 1.4： 将`Movidius NCS V1`插入树莓派
 再次注意：该方法仅适用于`NCS V1`。NCS V2 不适用于本方法。
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## 2 安装Movidius SDK
 代码来自[Inter](https://github.com/movidius/ncsdk)
@@ -125,9 +125,9 @@ sudo make all
 #### 步骤 3.2-5：错误提示
 如果运行失败，并且terminal中没有出现如下语句：
 ![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/2017.png)<br>
-而是出现，
-`mvNCCompile, Copyright @ Intel Corporation 2016`
-那么，请运行`make uninstall`指令，卸载ncsdk。重新执行步骤2.0以后的步骤
+而是出现，<br>
+`mvNCCompile, Copyright @ Intel Corporation 2016`<br>
+那么，请运行`make uninstall`指令，卸载ncsdk。重新执行步骤2.0以后的步骤<br>
 
 
 ### 步骤3.3：开始首次运行
