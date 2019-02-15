@@ -28,7 +28,7 @@ sudo aptitude update && sudo aptitude dist-upgrade  && sudo reboot
 ### 步骤 1.4： 将`Movidius NCS V1`插入树莓派
 再次注意：该方法仅适用于`NCS V1`。NCS V2 不适用于本方法。
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## 2 安装Movidius SDK
 代码来自[Inter](https://github.com/movidius/ncsdk)
@@ -90,7 +90,7 @@ make run
 ![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/hello-ncs.png) <br>
 如果你看到如上图所示的结果，那么恭喜你，完成了ncsdk的安装
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## 安装NCAPPZOO
 ### 步骤 3.1： 克隆NACPPZOO
@@ -112,13 +112,13 @@ sudo make all
 在这个过程中，程序会自动下载darkflow，以及权重等需要的软件。<br>
 运行过程中，应当会出现以下内容：
 
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 1.png) <br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all-1.png) <br>
 下载权重以及cfg文件
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 2.png)<br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all-2.png)<br>
 生成对应网络的pb文件
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 3.png)<br>
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 4.png)<br>
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 5.png)<br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all-3.png)<br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all-4.png)<br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all-5.png)<br>
 生成graph文件，并将网络编译入Movidius
 运行完成后，我们就已经成功
 
@@ -139,7 +139,7 @@ sudo make run
 ![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/end-make-run.png)<br>
 最终获得的结果，可以看出，程序已经能够顺利识别椅子了。
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## 运行MS-COCO为基础的Tiny-yolo-v2
 ### 步骤 4.1： 更改makefile
@@ -237,4 +237,4 @@ sudo make run
 ```
 如果运行成功，那么恭喜你，完成了文件的转换。可以正常运行了~
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
