@@ -7,8 +7,7 @@
 
 请注意，为了方便使用Tkinter制作的GUI 界面，所以应当选择使用Raspbian Stretch with desktop<br>
 ![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/stretch.png) <br>
-<br>
-测试运行版本：[2018-11-13-raspbian-stretch.img](https://downloads.raspberrypi.org/raspbian/images/raspbian-2018-11-15/2018-11-13-raspbian-stretch.zip.torrent)
+<br>测试运行版本：[2018-11-13-raspbian-stretch.img](https://downloads.raspberrypi.org/raspbian/images/raspbian-2018-11-15/2018-11-13-raspbian-stretch.zip.torrent)
 
 ### 步骤 1.2 ：烧录镜像文件
 
