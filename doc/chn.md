@@ -7,6 +7,7 @@
 
 请注意，为了方便使用Tkinter制作的GUI 界面，所以应当选择使用Raspbian Stretch with desktop<br>
 ![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/stretch.png) <br>
+<br>
 测试运行版本：[2018-11-13-raspbian-stretch.img](https://downloads.raspberrypi.org/raspbian/images/raspbian-2018-11-15/2018-11-13-raspbian-stretch.zip.torrent)
 
 ### 步骤 1.2 ：烧录镜像文件
@@ -27,7 +28,7 @@ sudo aptitude update && sudo aptitude dist-upgrade  && sudo reboot
 ### 步骤 1.4： 将`Movidius NCS V1`插入树莓派
 再次注意：该方法仅适用于`NCS V1`。NCS V2 不适用于本方法。
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## 2 安装Movidius SDK
 代码来自[Inter](https://github.com/movidius/ncsdk)
@@ -86,7 +87,7 @@ cd /ncsdk/examples/apps/hello_ncs_py
 make run
 
 ```
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/hello-ncs.png) 
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/hello-ncs.png) <br>
 如果你看到如上图所示的结果，那么恭喜你，完成了ncsdk的安装
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,19 +112,19 @@ sudo make all
 在这个过程中，程序会自动下载darkflow，以及权重等需要的软件。<br>
 运行过程中，应当会出现以下内容：
 
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 1.png) 
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 1.png) <br>
 下载权重以及cfg文件
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 2.png)
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 2.png)<br>
 生成对应网络的pb文件
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 3.png)
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 4.png)
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 5.png)
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 3.png)<br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 4.png)<br>
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/make-all 5.png)<br>
 生成graph文件，并将网络编译入Movidius
 运行完成后，我们就已经成功
 
 #### 步骤 3.2-5：错误提示
 如果运行失败，并且terminal中没有出现如下语句：
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/2017.png)
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/2017.png)<br>
 而是出现，
 `mvNCCompile, Copyright @ Intel Corporation 2016`
 那么，请运行`make uninstall`指令，卸载ncsdk。重新执行步骤2.0以后的步骤
@@ -135,7 +136,7 @@ sudo make run
 
 ```
 现在，运行上方的shell指令，就能够完成首次Tiny-yolo-v2的运行了。
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/end-make-run.png)
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/end-make-run.png)<br>
 最终获得的结果，可以看出，程序已经能够顺利识别椅子了。
 
 ## 运行MS-COCO为基础的Tiny-yolo-v2
@@ -219,7 +220,7 @@ anchor_boxes = [0.57273,0.677385,1.87446,2.06253,3.33843,5.47434,7.88282,3.52778
 将原先voc使用的锚点替换为新的coco使用的锚点。具体数据同样可以在刚刚下载的cfg文件中查找到。<br>
 
 #### 回到第六行，将原先的`labe_name`替换为现在的如下的label_name
-![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/label-name.png)
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/label-name.png)<br>
 
 ### 步骤 4.5 ：删除现有的Tiny-yolo-v2文件
 
