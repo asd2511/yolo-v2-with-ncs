@@ -3,8 +3,7 @@
 `Note: This method is only available for NCS V1. NCS V2 should use OpenVINO。`
 ## 1 Raspberry Pi basic settings
 ### Step 1.1: Download the Raspberry Pi image
-Download the raspbian Stretch image from the [official website of the Raspberry Pi]
-https://www.raspberrypi.org/downloads/raspbian/) 。<br>
+Download the raspbian Stretch image from the [official website of the Raspberry Pi](https://www.raspberrypi.org/downloads/raspbian/) 。<br>
 
 Please note that you should choose to use Raspbian Stretch with desktop.<br>
 ![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/stretch.png) <br>
