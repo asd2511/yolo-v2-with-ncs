@@ -28,7 +28,7 @@ sudo aptitude update && sudo aptitude dist-upgrade  && sudo reboot
 ### 步骤 1.4： 将`Movidius NCS V1`插入树莓派
 再次注意：该方法仅适用于`NCS V1`。NCS V2 不适用于本方法。
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## 2 安装Movidius SDK
 代码来自[Inter](https://github.com/movidius/ncsdk)
