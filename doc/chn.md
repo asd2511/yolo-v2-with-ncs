@@ -235,5 +235,5 @@ sudo make clean
 sudo make run
 ```
 如果运行成功，那么恭喜你，完成了文件的转换。可以正常运行了~
-
+![](https://github.com/asd2511/yolo-v2-with-ncs/blob/master/img/apple.png)<br>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
